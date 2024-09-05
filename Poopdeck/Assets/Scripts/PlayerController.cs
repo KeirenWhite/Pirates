@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 5f;
     private KeyCode lastKeyPressed;
+    private KeyCode[] controlsArray;
 
     void Start()
     {
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W))
         {
             lastKeyPressed = KeyCode.W;
+            print(lastKeyPressed);
         }
         else if (Input.GetKeyDown(KeyCode.S))
         {

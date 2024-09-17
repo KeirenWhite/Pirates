@@ -5,6 +5,7 @@ using UnityEngine;
 public class NPCinteraction : MonoBehaviour
 {
     public DialogueSystem dialogueSystem;
+    public TimeCycle timeCycle;
     public string[] npcDialogueLines;
     public float interactionDistance = 1.5f;
     private Transform player;
@@ -17,9 +18,13 @@ public class NPCinteraction : MonoBehaviour
     
     void Update()
     {
-        if (Vector2.Distance(transform.position, player.position) < interactionDistance && Input.GetKeyDown(KeyCode.E))
+        if (timeCycle.currentHour >= 0)
         {
-            dialogueSystem.StartDialogue(npcDialogueLines, transform);
-        }    
+            if (Vector2.Distance(transform.position, player.position) < interactionDistance && Input.GetKeyDown(KeyCode.E))
+            {
+                dialogueSystem.StartDialogue(npcDialogueLines, transform);
+            }
+        }
+        
     }
 }

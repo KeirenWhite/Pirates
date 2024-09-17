@@ -32,6 +32,8 @@ public class TimeCycle : MonoBehaviour
         
     }
 
+  
+
     IEnumerator NextDayAfterSomeTime()
     {
         while (true)

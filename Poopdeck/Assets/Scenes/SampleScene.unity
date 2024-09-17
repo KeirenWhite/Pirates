@@ -230,6 +230,17 @@ MonoBehaviour:
   player: {fileID: 1329789969}
   smoothSpeed: 0.125
   offset: {x: 0, y: 0, z: -100}
+--- !u!114 &1092362784 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4620077169487071942, guid: 7f126a7dd82215a44b07a37c72229188, type: 3}
+  m_PrefabInstance: {fileID: 7776187937117680045}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cfc6d56f6ce2d64cb8da2c94582529f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1329789969 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8399744086750413404, guid: 199d18b967ff59e4b9d30e8e36f7eb4e, type: 3}
@@ -779,7 +790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1464305296680017841, guid: 9174a6e30b2b02541a8b38c16719ce8c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.77
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1464305296680017841, guid: 9174a6e30b2b02541a8b38c16719ce8c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -818,20 +829,32 @@ PrefabInstance:
       value: NPC
       objectReference: {fileID: 0}
     - target: {fileID: 9086487891393150834, guid: 9174a6e30b2b02541a8b38c16719ce8c, type: 3}
+      propertyPath: timeCycle
+      value: 
+      objectReference: {fileID: 1092362784}
+    - target: {fileID: 9086487891393150834, guid: 9174a6e30b2b02541a8b38c16719ce8c, type: 3}
       propertyPath: dialogueSystem
       value: 
       objectReference: {fileID: 1559566394}
     - target: {fileID: 9086487891393150834, guid: 9174a6e30b2b02541a8b38c16719ce8c, type: 3}
       propertyPath: npcDialogueLines.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9086487891393150834, guid: 9174a6e30b2b02541a8b38c16719ce8c, type: 3}
       propertyPath: npcDialogueLines.Array.data[0]
-      value: gay
+      value: bro
       objectReference: {fileID: 0}
     - target: {fileID: 9086487891393150834, guid: 9174a6e30b2b02541a8b38c16719ce8c, type: 3}
       propertyPath: npcDialogueLines.Array.data[1]
-      value: guy
+      value: seph
+      objectReference: {fileID: 0}
+    - target: {fileID: 9086487891393150834, guid: 9174a6e30b2b02541a8b38c16719ce8c, type: 3}
+      propertyPath: npcDialogueLines.Array.data[2]
+      value: bro
+      objectReference: {fileID: 0}
+    - target: {fileID: 9086487891393150834, guid: 9174a6e30b2b02541a8b38c16719ce8c, type: 3}
+      propertyPath: npcDialogueLines.Array.data[3]
+      value: star
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
